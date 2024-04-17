@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(94, 22, 162); */
+    background:linear-gradient(90deg, #8321fd 0%, #ab21ff 100%);
+}
+.container{
+    height: fit-content;
+    width: 70vw;
+    /*
+    border: 2px solid red;
+    */
+}
+.header{
+    /*
+    border: 2px solid red;
+    */
+    height: fit-content;
+    width: 100%;
+    font-size: 22px;
+}
+.javascript{
+    color: white;
+    margin-bottom: 15px;
+}
+.ageCalculator{
+    color: #fff;
+}
+.ageCalculator span{
+    color: 	yellow;
+}
+.input{
+    /*
+    border: 2px solid red; 
+    */
+    margin-block:30px;  
+}
+.input-box{
+    /*
+    border:2px solid red;
+    */
+    width: fit-content;
+    padding: 25px;
+    background-color: rgb(189, 135, 240);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date,.calculate{
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.date{
+    width: 250px;
+}
+.calculate{
+    background-color: yellow;
+    width: 120px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+@media screen and (max-width:600px) {
+    .input-box{
+        flex-direction: column;
+    }
+    .calculate{
+        margin-top: 25px;
+    }
+}
+@media  screen and (max-width:400px) {
+    .date{
+        width: 60vw;
+    }
+}
+.calculate:hover{
+    background-color: rgb(222, 222, 31);
+    transform: scale(1.05);
+    font-weight: 500;
+}
+.yourAge{
+    height: 40px;
+    width: 100%;
+    /*
+    border: 2px solid red;
+    */
+    padding: 5px 15px;
+}
+.yourAge p{
+    font-size: 25px;
+    font-weight: 500;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    color: 		#000;
+}
+.yourAge p span{
+    color: yellow;
+}
